@@ -1,0 +1,42 @@
+{
+  "name": "aurelia-skeleton",
+  "version": "1.0.0",
+  "description": "A very basic TypeScript/WebPack skeleton for Aurelia",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/declspec/aurelia-skeleton.git"
+  },
+  "keywords": [
+    "Aurelia",
+    "Skeleton",
+    "TypeScript",
+    "WebPack"
+  ],
+  "author": "Jason Larke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/declspec/aurelia-skeleton/issues"
+  },
+  "homepage": "https://github.com/declspec/aurelia-skeleton#readme",
+  "dependencies": {
+    "aurelia-bootstrapper-webpack": "1.0.0",
+    "aurelia-event-aggregator": "1.0.0",
+    "aurelia-framework": "1.0.5",
+    "aurelia-history-browser": "1.0.0",
+    "aurelia-loader-webpack": "1.0.3",
+    "aurelia-logging-console": "1.0.0",
+    "aurelia-templating-binding": "1.0.0",
+    "aurelia-templating-resources": "1.0.0",
+    "aurelia-templating-router": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.34",
+    "aurelia-webpack-plugin": "1.0.0-beta.4.0.1",
+    "awesome-typescript-loader": "2.2.4",
+    "html-loader": "0.4.4",
+    "typescript": "2.0.3",
+    "webpack": "1.13.2"
+  }
+}
