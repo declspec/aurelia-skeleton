@@ -32,6 +32,7 @@ function getConfig() {
                 './src/main.ts'
             ],
             aurelia: [
+                'bluebird',
                 'aurelia-bootstrapper-webpack',
                 'aurelia-binding',
                 'aurelia-dependency-injection',
@@ -59,8 +60,8 @@ function getConfig() {
         },
 
         output: {
-            path: './dist',
-            publicPath: 'dist/',
+            path: './bin',
+            publicPath: 'bin/',
             filename: '[name].js'
         },
 
@@ -78,14 +79,16 @@ function getConfig() {
 
         module: {
             loaders: [
-                { test: /\.tsx?$/, loader: 'awesome-typescript-loader' },
-                { test: /\.html$/, loader: 'html' }
+                { test: /\.css$/,       loader: "style-loader!css-loader" },
+                { test: /\.tsx?$/,      loader: 'awesome-typescript-loader' },
+                { test: /\.html$/,      loader: 'html' }
             ]
         },
 
         plugins: [
             new AureliaPlugin(),
-            new webpack.optimize.CommonsChunkPlugin('aurelia', 'aurelia.js')
+            new webpack.ProvidePlugin({ Promise: 'bluebird' }),
+            new webpack.optimize.CommonsChunkPlugin({ name: 'aurelia', filename: 'aurelia.js' })
         ]
     };
 }

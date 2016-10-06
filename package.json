@@ -2,8 +2,7 @@
   "name": "aurelia-skeleton",
   "version": "1.0.0",
   "description": "A very basic TypeScript/WebPack skeleton for Aurelia",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/declspec/aurelia-skeleton.git"
@@ -29,13 +28,16 @@
     "aurelia-logging-console": "1.0.0",
     "aurelia-templating-binding": "1.0.0",
     "aurelia-templating-resources": "1.0.0",
-    "aurelia-templating-router": "1.0.0"
+    "aurelia-templating-router": "1.0.0",
+    "bluebird": "^3.4.6"
   },
   "devDependencies": {
     "@types/core-js": "0.9.34",
     "aurelia-webpack-plugin": "1.0.0-beta.4.0.1",
     "awesome-typescript-loader": "2.2.4",
+    "css-loader": "^0.25.0",
     "html-loader": "0.4.4",
+    "style-loader": "^0.13.1",
     "typescript": "2.0.3",
     "webpack": "1.13.2"
   }
